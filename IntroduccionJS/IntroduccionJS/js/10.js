@@ -6,4 +6,9 @@ tecnologias.forEach(function (teach) {
 });
 
 // Map --crea un nuevo arreglo a diferencia de forEach
-const arrayMap = tecnologias.map();
+const arrayMap = tecnologias.map(function (tech) {
+  return tech;
+});
+
+console.log("------Usando Map--------");
+console.log(arrayMap);
